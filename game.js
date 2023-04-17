@@ -108,7 +108,7 @@ $(document).on("keydown", function (event) {
     }
 });
 
-$(document).on("touchstart", function (event) {
+$(document).on("touchend", function (event) {
     if (!gameRunning) {
         $("h1").text("Level " + level);
         nextSecuence();
