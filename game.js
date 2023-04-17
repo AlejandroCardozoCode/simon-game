@@ -100,7 +100,15 @@ function startOver() {
     gamePattern = [];
     level = 0;
 }
+
 $(document).on("keydown", function (event) {
+    if (!gameRunning) {
+        $("h1").text("Level " + level);
+        nextSecuence();
+    }
+});
+
+$(document).on("touchstart", function (event) {
     if (!gameRunning) {
         $("h1").text("Level " + level);
         nextSecuence();
