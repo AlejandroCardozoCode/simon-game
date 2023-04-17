@@ -6,7 +6,6 @@ gameRunning = false;
 
 function animateButton(color) {
     $("#" + color).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
-
 }
 
 function playSound(name) {
@@ -108,14 +107,14 @@ $(document).on("keydown", function (event) {
     }
 });
 
-$(document).on("touchend", function (event) {
+$(document).on("touchstart", function (event) {
     if (!gameRunning) {
         $("h1").text("Level " + level);
         nextSecuence();
     }
 });
 
-$(".btn").on("click", function () {
+$(".butn").on("click", function () {
     color = $(this).attr("id");
     handlerButton(color);
 });
