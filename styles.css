@@ -1,6 +1,5 @@
 body {
   text-align: center;
-  min-width: 500px;
   background-color: #29252C;
 }
 
@@ -26,8 +25,8 @@ body {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   border: 8px solid black;
   box-shadow: 0 0 10px white;
   border-radius: 20%;
